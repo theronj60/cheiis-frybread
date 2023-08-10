@@ -1,81 +1,80 @@
----
-import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
----
+<header class="flex justify-between items-center px-24 py-6 bg-teal-500">
+    <div class="flex flex-col items-center text-white">
+		<h3 class="text-3xl font-semibold">Cheii's Frybread</h3>
+        <!-- <img src="/path/to/your/logo.png" alt="Logo" class="h-8 w-auto"> -->
+    </div>
+    <nav class="space-x-4">
+        <a href="/" class="text-white hover:text-gray-200">Home</a>
+        <a href="#about" class="text-white hover:text-gray-200">About</a>
+        <a href="#menu" class="text-white hover:text-gray-200">Menu</a>
+		<a href="sms:+14352162674" class="text-white hover:text-gray-200">Text Us!</a>
+    </nav>
+</header>
+<div class="flex flex-col justify-center">
+	<!-- <section class="flex justify-center items-center bg-cover h-[500px] bg-right" style="background-image: url('/src/imgs/dough-ball.jpeg');"> -->
+	<!-- 	<div class="border h-44 w-[600px] bg-gray-800 bg-opacity-60 rounded-xl flex items-center justify-center text-white text-3xl"> -->
+	<!-- 		<span class="opacity-100">Your Company Name</span> -->
+	<!-- 	</div> -->
+	<!-- </section> -->
+	<section id="about" class="flex flex-col items-center md:flex-row border p-6 space-y-4 md:space-y-0 md:space-x-4">
+		<img src="/path/to/your/about-image.jpg" alt="About image" class="w-full md:w-1/2 h-64 object-cover">
+		<div class="w-full md:w-1/2 flex flex-col justify-center">
+			<p>Your company description and other details go here...</p>
+		</div>
+	</section>
+	<section>
+		<h1 class="flex justify-center text-3xl font-semibold mb-4">Our Menu</h1>
+		<h2 class="flex justify-center text-xl">Navajo tacos come with toppings: cheese, lettuce, onion, tomato, and sourcream.</h2>
+	</section>
+	<section id="menu" class="mx-auto w-2/3 p-6 grid grid-cols-2 md:grid-cols-3 gap-4">
+		<div class="border border-black flex flex-col relative items-center justify-center px-8 h-72">
+			<img src="../src/imgs/navajo-taco.jpg" class="h-2/3 rounded" alt="Menu item 1">
+			<h2 class="text-lg">Navajo Taco</h2>
+			<p>Home made chili, frybread, with choice of toppings.Description for menu item 1...</p>
+		</div>
+		<div class="border border-black flex flex-col items-center justify-center px-8 h-72">
+			<img src="/path/to/your/menu-item-1.jpg" alt="Menu item 1">
+			<h2 class="text-lg">Frybread</h2>
+			<p>Simple and delicious, fried bread.</p>
+		</div>
+		<div class="border border-black flex flex-col items-center justify-center px-8 h-72">
+			<img src="/path/to/your/menu-item-1.jpg" alt="Menu item 1">
+			<h2 class="text-lg">Soda</h2>
+			<p>Several choices, depends on day, pepsi and coke.</p>
+		</div>
+		<div class="border border-black flex flex-col items-center justify-center px-8 h-72">
+			<img src="/path/to/your/menu-item-1.jpg" alt="Menu item 1">
+			<h2 class="text-lg">Desert Chips</h2>
+			<p>Description for menu item 4...</p>
+		</div>
+		<div class="border border-black flex flex-col items-center justify-center px-8 h-72">
+			<img src="/path/to/your/menu-item-1.jpg" alt="Menu item 1">
+			<h2 class="text-lg">Menu item 5</h2>
+			<p>Description for menu item 5...</p>
+		</div>
+		<div class="border border-black flex flex-col items-center justify-center px-8 h-72">
+			<img src="/path/to/your/menu-item-1.jpg" alt="Menu item 1">
+			<h2 class="text-lg">Menu item 6</h2>
+			<p>Description for menu item 6...</p>
+		</div>
+	</section>
+</div>
+<footer class="mt-16 p-6 bg-gray-800 text-white text-center">
+	<div class="flex flex-col items-center justify-center space-y-4">
+		<div>
+			&copy; {(new Date()).getFullYear()} Your Company Name
+		</div>
+		<div>
+			<div>
+				<a href="" target="_blank">
+					<svg class="fill-[#1877f2] bg-white rounded-[3.5px]" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+						<path d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"/>
+					</svg>
+				</a>
+			</div>
+			<div>FB</div>
+			<div>Insta</div>
+		</div>
+	</div>
+</footer>
 
-<Layout title="Welcome to Astro.">
-	<main>
-		<h1>Welcome to <span class="text-gradient">Astro</span></h1>
-		<p class="instructions">
-			To get started, open the directory <code>src/pages</code> in your project.<br />
-			<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
-		</p>
-		<ul role="list" class="link-card-grid">
-			<Card
-				href="https://docs.astro.build/"
-				title="Documentation"
-				body="Learn how Astro works and explore the official API docs."
-			/>
-			<Card
-				href="https://astro.build/integrations/"
-				title="Integrations"
-				body="Supercharge your project with new frameworks and libraries."
-			/>
-			<Card
-				href="https://astro.build/themes/"
-				title="Themes"
-				body="Explore a galaxy of community-built starter themes."
-			/>
-			<Card
-				href="https://astro.build/chat/"
-				title="Community"
-				body="Come say hi to our amazing Discord community. ❤️"
-			/>
-		</ul>
-	</main>
-</Layout>
-
-<style>
-	main {
-		margin: auto;
-		padding: 1.5rem;
-		max-width: 60ch;
-	}
-	h1 {
-		font-size: 3rem;
-		font-weight: 800;
-		margin: 0;
-	}
-	.text-gradient {
-		background-image: var(--accent-gradient);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-size: 400%;
-		background-position: 0%;
-	}
-	.instructions {
-		line-height: 1.6;
-		margin: 1rem 0;
-		border: 1px solid rgba(var(--accent), 25%);
-		background-color: white;
-		padding: 1rem;
-		border-radius: 0.4rem;
-	}
-	.instructions code {
-		font-size: 0.875em;
-		font-weight: bold;
-		background: rgba(var(--accent), 12%);
-		color: rgb(var(--accent));
-		border-radius: 4px;
-		padding: 0.3em 0.45em;
-	}
-	.instructions strong {
-		color: rgb(var(--accent));
-	}
-	.link-card-grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-		gap: 1rem;
-		padding: 0;
-	}
-</style>
