@@ -1,5 +1,8 @@
 ---
 import MainLayout from '../layouts/Layout.astro'
+import NavajoTaco from '../src/imgs/navajo-taco.jpg'
+import DoughBall from '../src/imgs/frybread.jpeg'
+import Drinks from '../src/imgs/charlie-wollborg-Yezt64WAT8A-unsplash.jpg'
 ---
 
 <MainLayout>
@@ -22,19 +25,21 @@ import MainLayout from '../layouts/Layout.astro'
 		</section>
 		<section id="menu" class="mx-auto sm:w-2/3 p-6 grid sm:grid-cols-2 md:grid-cols-3 gap-4">
 			<div class="border border-black flex flex-col space-y-4 py-4 relative items-center justify-center px-8">
-				<img src="../src/imgs/navajo-taco.jpg" class="h-2/3 rounded" alt="Menu item Navajo Taco">
-				<h2 class="text-lg">Navajo Taco - $12</h2>
-				<p>Home made chili, frybread, with choice of toppings. Comes with Drink</p>
+				<img src={ NavajoTaco } class="h-80 rounded" alt="Menu item Navajo Taco">
+				<h2 class="text-lg">Navajo Taco with Drink - $12</h2>
+				<p>Home made chili on frybread.
 			</div>
 			<div class="border border-black flex flex-col space-y-4 py-4 items-center justify-center px-8">
-				<img src="../src/imgs/dough-ball.jpeg" alt="Menu item Frybread">
+				<img src={ DoughBall } class="h-80 rounded" alt="Menu item Frybread">
 				<h2 class="text-lg">Frybread - $2</h2>
 				<p>Simple and delicious, fried bread.</p>
 			</div>
 			<div class="border border-black flex flex-col space-y-4 py-4 items-center justify-center px-8">
-				<img src="/path/to/your/menu-item-1.jpg" alt="Menu item Drinks">
+				<div class="h-80 flex justify-center items-center">
+					<img src={ Drinks } class="rounded" alt="Menu item Drinks">
+				</div>
 				<h2 class="text-lg">Soda/Water - $2</h2>
-				<p>Pepsi, Diet Pepsi, Coke, Diet Coke, and Water</p>
+				<p>Pepsi, Diet Pepsi, Coke, Diet Coke.</p>
 			</div>
 			<!-- <div class="border border-black flex flex-col items-center justify-center px-8 h-72"> -->
 			<!-- 	<img src="/path/to/your/menu-item-1.jpg" alt="Menu item 1"> -->

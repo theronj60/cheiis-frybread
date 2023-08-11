@@ -1,6 +1,10 @@
 ---
 import Header from '../components/Header.astro'
 import Footer from '../components/Footer.astro'
+import AppleTouch from '../src/imgs/apple-touch-icon.png'
+import FavMed from '../src/imgs/favicon-32x32.png'
+import FavSm from '../src/imgs/favicon-16x16.png'
+import Manifest from '../src/imgs/site.webmanifest'
 ---
 
 <!DOCTYPE html>
@@ -9,10 +13,10 @@ import Footer from '../components/Footer.astro'
 		<meta charset="UTF-8" />
 		<meta name="description" content="Astro description">
 		<meta name="viewport" content="width=device-width" />
-		<link rel="apple-touch-icon" sizes="180x180" href="../src/imgs/apple-touch-icon.png">
-		<link rel="icon" type="image/png" sizes="32x32" href="../src/imgs/favicon-32x32.png">
-		<link rel="icon" type="image/png" sizes="16x16" href="../src/imgs/favicon-16x16.png">
-		<link rel="manifest" href="../src/imgs/site.webmanifest">
+		<link rel="apple-touch-icon" sizes="180x180" href={ AppleTouch }>
+		<link rel="icon" type="image/png" sizes="32x32" href={ FavMed }>
+		<link rel="icon" type="image/png" sizes="16x16" href={ FavSm }>
+		<link rel="manifest" href={ Manifest }>
 		<meta name="generator" content={Astro.generator} />
 		<title>Cheii's Frybread</title>
 	</head>
