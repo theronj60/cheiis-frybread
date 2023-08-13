@@ -11,14 +11,32 @@ import Manifest from '../imgs/site.webmanifest'
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="description" content="Astro description">
-		<meta name="viewport" content="width=device-width" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Title Tag -->
+		<title>Cheii's Frybread | Homemade Frybread & Navajo Tacos</title>
+		<!-- Meta Description -->
+		<meta name="description" content="Experience indigenous cuisine with Cheii's Frybread. Serving fresh homemade Frybread and authentic Navajo Tacos.">
+		<!-- Keywords for SEO (if needed) -->
+		<meta name="keywords" content="Frybread, Navajo Tacos, Indigenous cuisine, Cheii's Frybread, Homemade Frybread">
+		<!-- Canonical URL (if needed) -->
+		<link rel="canonical" href="https://www.cheiisfrybread.com/">
+		<!-- Social Media Tags (Open Graph for Facebook) -->
+		<meta property="og:title" content="Cheii's Frybread | Authentic Navajo Tacos & Homemade Frybread">
+		<meta property="og:description" content="Experience indigenous cuisine with Cheii's Frybread. Serving fresh homemade Frybread and authentic Navajo Tacos.">
+		<meta property="og:image" content={ FavSm }>
+		<meta property="og:url" content="https://www.cheiisfrybread.com/">
+		<meta property="og:type" content="website">
+		<!-- Twitter Card -->
+		<meta name="twitter:card" content="navajo_taco_stand">
+		<meta name="twitter:title" content="Cheii's Frybread | Homemade Frybread & Navajo Tacos">
+		<meta name="twitter:description" content="Experience the authenticity of our indigenous cuisine. Dive into the flavors of our fresh homemade Frybread and Navajo Tacos.">
+		<meta name="twitter:image" content={ FavMed }>
 		<link rel="apple-touch-icon" sizes="180x180" href={ AppleTouch }>
 		<link rel="icon" type="image/png" sizes="32x32" href={ FavMed }>
 		<link rel="icon" type="image/png" sizes="16x16" href={ FavSm }>
 		<link rel="manifest" href={ Manifest }>
 		<meta name="generator" content={Astro.generator} />
-		<title>Cheii's Frybread</title>
 	</head>
 	<body class="min-h-screen relative flex flex-col font-sans font-light antialiased">
 		<Header />
