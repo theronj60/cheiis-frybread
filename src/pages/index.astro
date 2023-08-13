@@ -1,13 +1,16 @@
 ---
 import MainLayout from '../layouts/Layout.astro'
 import NavajoTaco from '../imgs/navajo-taco.jpg'
-import DoughBall from '../imgs/frybread.jpeg'
+import Frybread from '../imgs/frybread.jpeg'
+import DoughBall from '../imgs/dough-ball.jpeg'
 import Drinks from '../imgs/charlie-wollborg-Yezt64WAT8A-unsplash.jpg'
+
+const bgImg = `background-image: url(${DoughBall}); background-size: cover;`
 ---
 
 <MainLayout>
-	<div class="flex flex-col justify-center">
-		<section class="flex justify-center items-center bg-cover h-[500px] bg-right" style="background-image: url('/imgs/dough-ball.jpeg');">
+<div class="flex flex-col justify-center">
+	<section class="flex justify-center items-center bg-cover h-[500px] bg-right" style={ bgImg }>
 			<div class="border w-[600px] bg-gray-800 bg-opacity-60 rounded-xl flex flex-col p-8 items-center justify-center text-white text-3xl">
 				<!-- <h1 class="opacity-100 text-4xl font-bold leading-relaxed">Cheii's Frybread</h1> -->
 				<p class="text-center">We are a family run Navajo Taco stand based in Washington City, Utah</p>
@@ -33,7 +36,7 @@ import Drinks from '../imgs/charlie-wollborg-Yezt64WAT8A-unsplash.jpg'
 				<p>Home made chili on frybread.
 			</div>
 			<div class="border border-black flex flex-col space-y-4 py-4 items-center justify-center px-8">
-				<img src={ DoughBall } class="h-80 rounded" alt="Menu item Frybread">
+				<img src={ Frybread } class="h-80 rounded" alt="Menu item Frybread">
 				<h2 class="text-lg">Frybread - $2</h2>
 				<p>Simple and delicious, fried bread.</p>
 			</div>
